@@ -1,0 +1,50 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.carousel-title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+.carousel-container {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 300%; /* Largura total de 3 elementos (100% * 3) */
+    animation: slide-animation 15s infinite;
+}
+
+.black-square {
+    flex-shrink: 0; /* Impede que o quadrado encolha */
+    width: 100%; /* Ocupa 1/3 da largura do contêiner */
+    height: 100%;
+    background-color: #000;
+}
+
+/* Animação que move o carrossel */
+@keyframes slide-animation {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(0); }
+    33% { transform: translateX(-100%); } /* Move para o segundo quadrado */
+    58% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); } /* Move para o terceiro quadrado */
+    91% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}

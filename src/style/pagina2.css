@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+}
+
+h1, h2 {
+    font-family: Arial, sans-serif;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-body {
+    background-color: #f9f9f9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Alinhamento das imagens com o texto */
+.d-flex {
+    margin-bottom: 20px;
+}
+
+.d-flex img {
+    max-width: 200px;
+    height: auto;
+}
+
+.d-flex .ml-4 {
+    margin-left: 20px;
+}
+
+.d-flex .mr-4 {
+    margin-right: 20px;
+}
+
+.text-right {
+    text-align: right;
+}
